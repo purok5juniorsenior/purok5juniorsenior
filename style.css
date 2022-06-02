@@ -1,0 +1,201 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+  background: skyblue;
+}
+
+.navbar{
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background: rgb(150,0,0);
+  width: 100%;
+}
+.logo{
+  background: url(P5-Logo.png) no-repeat;
+  background-size: contain;
+  width: 80%;
+  height: 80%;
+  float: left;
+  margin:20px;
+}
+.menu{
+  position: absolute;
+  right: 20px;
+}
+.menu a{
+background: rgb(150,0,0);
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+.menu .active{
+color: yellow;
+}
+.menu a:hover{
+  color: yellow;
+}
+.header{
+  width: 100%;
+  background-size: cover;
+}
+.header img{
+margin-top: 230px;
+}
+
+p{
+  padding: 20px;
+  font-size: 20px;
+  text-align: justify;
+  }
+  
+  .list-tbl{
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-wrap: wrap;
+  }
+  .list-tbl .summary-data{
+  width: 80%;
+  height: auto;
+  text-align: center;
+  background: white;
+  padding: 50px 30px;
+  font-family: "montserat", sans-serif;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000070;
+  }
+  .list-tbl .summary-data p{
+  text-align: center;
+  }
+  .card{
+  flex:25%;
+  padding: 10px;
+  max-width: 360px;
+  max-height: auto;
+  box-sizing: boarder-box;
+  color: black;
+  }
+  .text{
+  background: white;
+  padding: 5px;
+  font-family: "montserat", sans-serif;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000070;
+  }
+ .text img{
+  width: 100%;
+  background: 100%;
+  }
+  
+  .container{
+  width: 100%;
+  height: auto;
+  diplay: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  form{
+  background: blue;
+  display: flex;
+  flex-direction: column;
+  padding: 5vw 4vw;
+  width: 90%;
+  boarder-radius: 10px;
+  }
+  form h3{
+  color: white;
+  font-weight: 800;
+  margin-bottom: 20px;
+  }
+  form input, form textarea{
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background: white;
+  font-size: 16px;
+  }
+  form button{
+  padding: 15px;
+  background: red;
+  color: white;
+  font-size: 18px;
+  boarder: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  boarder-radius: 30px;
+  }
+  
+  footer{
+  background-color: rgb(150,0,0);
+  text-align: center;
+  padding: 1px;
+  }
+.contact{
+  color: white;
+  display: inline-flex;
+}
+.footer-title h4{
+  color: white;
+  margin: 5px;
+}
+.contact a{
+  color: white;
+  text-decoration: none;
+  margin: 5px 20px;
+}
+.contact a:hover{
+  color: yellow;
+}
+.contact .active{
+  color: yellow;
+}
+.outer-footer{
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  background-color: rgb(150,0,0)
+}
+
+@media only screen and (max-width : 600px) {
+  .navbar{
+    overflow: visible;
+  }
+  .logo{
+  background: url(P5-Logo.png) no-repeat 50% 50%;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-left:20px;
+  }
+  .menu{
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #f1f1f1;
+    max-height: auto;
+  }
+  .menu a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+  .show{
+    max-height: 500px;
+  }
+}
