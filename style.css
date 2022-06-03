@@ -96,6 +96,10 @@ p{
   width: 100%;
   background: 100%;
   }
+.text p{
+margin: 0;
+padding: 0;
+}
   
   .container{
   width: 100%;
